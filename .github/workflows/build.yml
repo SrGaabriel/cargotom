@@ -73,7 +73,7 @@ jobs:
         shell: bash
         run: |
           BIN_SUFFIX=""
-          if [[ "${{ matrix.runner }}" == "windows-latest" ]]; then
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
             BIN_SUFFIX=".exe"
           fi
 
