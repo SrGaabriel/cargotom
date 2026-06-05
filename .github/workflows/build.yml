@@ -33,6 +33,9 @@ jobs:
           - name: aarch64-apple-darwin # macos-arm64
             runner: macos-latest
             target: aarch64-apple-darwin
+          - name: aarch64-pc-windows-msvc # win-arm64
+            runner: windows-11-arm
+            target: aarch64-pc-windows-msvc
 
     # The steps to run for each matrix item
     steps:
